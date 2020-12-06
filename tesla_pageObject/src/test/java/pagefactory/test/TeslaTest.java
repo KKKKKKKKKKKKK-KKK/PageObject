@@ -12,7 +12,7 @@ public class TeslaTest {
     private WebDriver driver;
     @BeforeTest
     public void browserSetup(){
-        System.setProperty("webdriver.chrome.driver", "C:/q/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Webdriver/chromedriver.exe");
         driver=new ChromeDriver();
     }
     @Test
