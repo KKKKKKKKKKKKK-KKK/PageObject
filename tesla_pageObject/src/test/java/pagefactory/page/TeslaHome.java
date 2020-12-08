@@ -30,18 +30,18 @@ public class TeslaHome {
     }
     public TeslaHome openPage() {
         driver.get(DEFAULT_URL);
-        new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
+        //new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
         return this;
     }
     public TeslaHome choiseRegionOnMainPage(){
         (new WebDriverWait(driver, 50L)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='locale-modal' and @open]")));
         new WebDriverWait(driver, 50L).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='region-item i18n-en_us']/child::a[@title='United States' and text()='United States']")));
-        new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
+        //new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
         choiseRegion.click();
         return this;
     }
     public TeslaOrderPage choiseModelAndAddToOrder(){
-        new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
+        //new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
         choiseModel.click();
         orderNow.click();
         payment.click();

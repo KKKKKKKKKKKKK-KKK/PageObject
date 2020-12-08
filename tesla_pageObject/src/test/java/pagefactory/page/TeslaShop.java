@@ -34,7 +34,7 @@ public class TeslaShop {
     }
     public TeslaShop openPage() {
         driver.get(DEFAULT_URL);
-        new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
+        //new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
         return this;
     }
     public TeslaShop choiseRegion(){

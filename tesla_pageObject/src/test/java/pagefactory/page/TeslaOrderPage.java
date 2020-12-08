@@ -47,7 +47,7 @@ public class TeslaOrderPage{
         PageFactory.initElements(driver,this);
     }
     public TeslaOrderPage fillInAllInputs(String firstname,String lastname,String mail,String phone,String card,String date,String cvv,String zip){
-        new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
+        //new WebDriverWait(driver,10).until(CustomWait.jQueryAJAXsCompleted());
         firstNameInput.sendKeys(firstname);
         lastNameInput.sendKeys(lastname);
         emailInput.sendKeys(mail);
